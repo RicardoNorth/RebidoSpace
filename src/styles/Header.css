@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 2560px;
+  height: 10vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.header a {
+  padding: 0 2em 0 1em;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  transition: color 0.3s linear;
+}
+
+.header a:hover {
+  color: #29b7cb;  
+}
+
+.header a .pineapplelogo {
+  height: 3em;
+  margin-left: 0em;
+}
+
+.time {
+  flex: 1;
+  margin-right: 5em;
+  text-align: right;
+  font-size: 20px;
+}
