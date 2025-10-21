@@ -1,18 +1,17 @@
-import pineappleLogo from '../assets/pineapple.svg'
-import '../styles/MainBody.css'
+import { Routes, Route } from 'react-router-dom'
 
-function MainBody() {
+import Home from '../pages/Home'
+import Works from '../pages/Works'
+
+
+const MainBody = () => {
   return (
     <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={pineappleLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>This is Rebido's blog</h1>
-      <p className="read-the-docs">
-        欢迎光临...
-      </p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/notes"  />
+      </Routes>
     </>
   )
 }

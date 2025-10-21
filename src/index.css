@@ -11,7 +11,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    height: 10000px;
+  height: 1000px;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;               /* Chrome / Safari / Edge */
 }
 
 a {
@@ -30,6 +35,7 @@ body {
   max-width: 2560px;
   min-width: 320px;
   min-height: 100vh;
+  scrollbar-width: none;
 }
 
 h1 {

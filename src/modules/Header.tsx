@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import pineappleLogo from '../assets/pineapple.svg'
 import '../styles/Header.css'
 
@@ -24,17 +26,16 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="header">
-        <div className='headerlinks'></div>
-        <a href="">
+        <Link to="/">
           <img src={pineappleLogo} className='pineapplelogo'/>
-        </a>
-        <a href=''>Intro</a>
-        <a href=''>编程作品</a>
-        <a href="">读书笔记</a>
-        <a href="">好的故事</a>
-        <a href="">数据中心</a>
-        <a href="">闲置物品</a>
-        <a href="">联系我</a>
+        </Link>
+        <Link to="/">Intro</Link>
+        <Link to="/works">编程作品</Link>
+        <Link to="">读书笔记</Link>
+        <Link to="">好的故事</Link>
+        <Link to="">数据中心</Link>
+        <Link to="">闲置物品</Link>
+        <Link to="">联系我</Link>
         <div className='time'>
           {time}
         </div>
